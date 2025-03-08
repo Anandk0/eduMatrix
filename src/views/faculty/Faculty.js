@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 
 export const Faculty = (props) => {
   return (
-    <div>Faculty</div>
+    <div><h1>Faculty</h1></div>
   )
 }
 

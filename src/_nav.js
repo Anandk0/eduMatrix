@@ -11,11 +11,12 @@ import {
   cilNotes,
   cilPencil,
   cilPuzzle,
+  cilUser,
   cilSpeedometer,
   cilStar,
 } from '@coreui/icons'
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
-
+import Faculty from './views/faculty/Faculty'
 const _nav = [
   {
     component: CNavItem,
@@ -42,6 +43,12 @@ const _nav = [
     name: 'Typography',
     to: '/theme/typography',
     icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,  // Change from Faculty to CNavItem
+    name: 'Faculty',
+    to: '/faculty',
+    icon: <CIcon icon={cilUser} customClassName="nav-icon" />,
   },
   {
     component: CNavTitle,
